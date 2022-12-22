@@ -1,0 +1,97 @@
+
+
+body {
+    background: hsl(216, 12%, 8%);
+}
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.shape {
+    border-radius: 25px;
+    padding: 25px;
+    background: hsl(213, 19%, 18%);
+    color: hsl(0, 0%, 100%);
+    width: auto;
+}
+
+.star {
+    padding: 13px;
+    display: flex;
+    border-radius: 180px;
+    background: hsla(216, 12%, 54%, 0.13);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+}
+
+.title {
+    font-family: 'Overpass';
+    margin-top: 35px;
+}
+
+.paragraph {
+    font-family: 'Overpass';
+    font-size: 15px;
+    width: 355px;
+    color: hsl(217, 12%, 63%);
+}
+
+.rating ul{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding-inline-start: 0px;
+}
+
+.rating li {
+    text-align: center;
+    font-family: 'Overpass';
+    border-radius: 180px;
+    background: hsla(216, 12%, 54%, 0.13);
+    width: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.rating li:hover {
+    background:  hsl(217, 12%, 63%);
+}
+
+.rating li:active{
+    background:  hsl(25, 97%, 53%);
+}
+
+.submit {
+    text-transform: uppercase;
+    font-family: 'Overpass';
+    color: hsl(0, 0%, 100%);
+    background: hsl(25, 97%, 53%);
+    border: none;
+    border-radius: 45px;
+    width: 355px;
+    height: 50px;
+    cursor: pointer;
+
+    margin-top: 15px;
+}
+
+.submit:active {
+    background: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);;
+}
+
