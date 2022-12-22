@@ -1,11 +1,9 @@
-
-
 body {
     background: hsl(216, 12%, 8%);
 }
 
 
-.container{
+.container {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -39,6 +37,7 @@ body {
     margin-top: 35px;
 }
 
+
 .paragraph {
     font-family: 'Overpass';
     font-size: 15px;
@@ -53,12 +52,12 @@ body {
     width: 0;
 }
 
-.rating{
-    margin-top: 25px;
+.rating {
+    margin: 25px 0;
     display: flex;
     justify-content: space-between;
-    padding-inline-start: 0px;
     border: none;
+    padding: 6px;
 }
 
 .rating label {
@@ -68,6 +67,7 @@ body {
     background: hsla(216, 12%, 54%, 0.13);
     width: 20px;
     padding: 15px;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -76,16 +76,17 @@ body {
 }
 
 .rating label:hover {
-    background:  hsl(217, 12%, 63%);
+    background: hsl(217, 12%, 63%);
 }
 
-.rating input:checked + label{
-    background:  hsl(25, 97%, 53%);
+.rating input:checked+label {
+    background: hsl(25, 97%, 53%);
 }
 
 .submit {
     text-transform: uppercase;
     font-family: 'Overpass';
+    font-weight: bold;
     color: hsl(0, 0%, 100%);
     background: hsl(25, 97%, 53%);
     border: none;
@@ -93,8 +94,6 @@ body {
     width: 355px;
     height: 50px;
     cursor: pointer;
-
-    margin-top: 15px;
 }
 
 .submit:hover {
@@ -106,3 +105,50 @@ body {
     color: hsl(25, 97%, 53%);
 }
 
+
+/*Segunda tela*/
+
+.img-complete {
+    margin: 15px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.your-rating {
+    font-family: 'Overpass';
+    color: hsl(25, 97%, 53%);
+    font-size: 12px;
+    background: hsla(216, 12%, 54%, 0.13);
+    border-radius: 45px;
+    padding: 0.4em 1em 0.2em 1em;
+    width: auto;
+    height: auto;
+    text-align: center;
+    display: inline;
+}
+
+.title-dois {
+    font-family: 'Overpass';
+    font-size: 28px;
+    text-align: center;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+  }
