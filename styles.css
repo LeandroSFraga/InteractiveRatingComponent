@@ -46,14 +46,22 @@ body {
     color: hsl(217, 12%, 63%);
 }
 
-.rating ul{
+.notes {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.rating{
     margin-top: 25px;
     display: flex;
     justify-content: space-between;
     padding-inline-start: 0px;
+    border: none;
 }
 
-.rating li {
+.rating label {
     text-align: center;
     font-family: 'Overpass';
     border-radius: 180px;
@@ -64,15 +72,14 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    vertical-align: middle;
     cursor: pointer;
 }
 
-.rating li:hover {
+.rating label:hover {
     background:  hsl(217, 12%, 63%);
 }
 
-.rating li:active{
+.rating input:checked + label{
     background:  hsl(25, 97%, 53%);
 }
 
@@ -90,8 +97,12 @@ body {
     margin-top: 15px;
 }
 
+.submit:hover {
+    background: hsl(25, 86%, 39%);
+}
+
 .submit:active {
     background: hsl(0, 0%, 100%);
-    color: hsl(25, 97%, 53%);;
+    color: hsl(25, 97%, 53%);
 }
 
