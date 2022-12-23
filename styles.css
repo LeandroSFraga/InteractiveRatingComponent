@@ -138,10 +138,11 @@ body {
     display: inline;
 }
 
-.title-dois {
+.title-dois p {
     font-family: 'Overpass';
     font-size: 28px;
     text-align: center;
+    margin: 8px;
 }
 
 .attribution {

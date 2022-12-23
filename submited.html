@@ -55,7 +55,7 @@
             </svg>
             </div>
             <div class="container-rating">
-                <p class="your-rating">You selected <span id="valor_escolhido"></span> out of 5</p>
+                <p class="your-rating">You selected <span id="choosed_value"></span> out of 5</p>
             </div>
             <div class="title-dois" >
                 <p>Thank you!</p>
@@ -72,6 +72,9 @@
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="#">LeandroSFraga</a>.
     </div>
+    <script>
+        document.getElementById("choosed_value").innerHTML = localStorage.getItem("avaliation");
+    </script>
 
 </body>
 

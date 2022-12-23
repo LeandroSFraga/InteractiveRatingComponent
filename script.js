@@ -1,10 +1,9 @@
 let choosedValue;
-
-const valor = document.getElementById("btn-submit").onclick = () =>  { 
-    const radios =  document.getElementsByName("nota");
-    const choosedRadio = radios.find( (value) => value.checked );
+localStorage.setItem("avaliation", 0)
+const valor = document.getElementById("btn-submit").onclick = () => {
+    const radios = document.getElementsByName("nota");
+    const choosedRadio = Array.from(radios).find(value => value.checked);
     choosedValue = choosedRadio.value;
+    localStorage.setItem("avaliation", choosedValue);
 }
-
-document.getElementById("valor_escolhido").innerHTML = choosedValue;
 
