@@ -31,26 +31,27 @@
         <p>Please let us know how we did with your support request. All feedback is appreciated
           to help us improve our offering!</p>
       </div>
-      <fieldset>
-        <input type="text" id="name" required>
-      </fieldset>
+        <form class="textbox">
+          <input type="name" id="name" required class="textbox-inner">
+          <label for="name" class="textbox-label"><span class="textbox-span">Name</span></label>
+        </form>
 
-      <fieldset class="rating">
-        <input type="radio" id="nota1" class="notes" name="nota" value="1">
-        <label for="nota1" class="notes1">1</label>
-        <input type="radio" id="nota2" class="notes" name="nota" value="2">
-        <label for="nota2" class="notes2">2</label>
-        <input type="radio" id="nota3" class="notes" name="nota" value="3">
-        <label for="nota3" class="notes3">3</label>
-        <input type="radio" id="nota4" class="notes" name="nota" value="4">
-        <label for="nota4" class="notes4">4</label>
-        <input type="radio" id="nota5" class="notes" name="nota" value="5">
-        <label for="nota5" class="notes5">5</label>
-      </fieldset>
+        <fieldset class="rating">
+          <input type="radio" id="nota1" class="notes" name="nota" value="1">
+          <label for="nota1" class="notes1">1</label>
+          <input type="radio" id="nota2" class="notes" name="nota" value="2">
+          <label for="nota2" class="notes2">2</label>
+          <input type="radio" id="nota3" class="notes" name="nota" value="3">
+          <label for="nota3" class="notes3">3</label>
+          <input type="radio" id="nota4" class="notes" name="nota" value="4">
+          <label for="nota4" class="notes4">4</label>
+          <input type="radio" id="nota5" class="notes" name="nota" value="5">
+          <label for="nota5" class="notes5">5</label>
+        </fieldset>
 
-      <div>
-        <a href="/submited.html"><input type="button" class="submit" id="btn-submit" value="S u b m i t"></input></a>
-      </div>
+        <div>
+          <a href="/submited.html"><input type="submit" class="submit" id="btn-submit" value="S u b m i t"></input></a>
+        </div>
 
     </div>
   </div>

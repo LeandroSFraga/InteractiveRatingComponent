@@ -52,6 +52,70 @@ body {
     width: 0;
 }
 
+.textbox {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.textbox-inner {
+    background: hsla(216, 12%, 54%, 0.13);
+    font-size: 20px;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    padding: 20px 5px 5px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.textbox-label {
+    color: hsla(0, 0%, 100%, 0.466);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid hsl(0, 0%, 100%);
+}
+
+.textbox-span {
+    font-family: 'Overpass';
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.textbox-label::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid hsl(25, 97%, 53%);
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.textbox-inner:focus+.textbox-label .textbox-span,
+.textbox-inner:valid+.textbox-label .textbox-span {
+    transform: translateY(-150%);
+    font-size: 14px;
+    bottom: 0px;
+    color: hsl(25, 97%, 53%);
+}
+
+.textbox-inner:focus+.textbox-label::after,
+.textbox-inner:valid+.textbox-label::after {
+    transform: translateX(0%);
+}
+
+
 .rating {
     margin: 25px 0;
     display: flex;
@@ -152,4 +216,4 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
-  }
+}
