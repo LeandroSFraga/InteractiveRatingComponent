@@ -52,6 +52,10 @@ body {
     width: 0;
 }
 
+.notes label {
+
+}
+
 .textbox {
     border: none;
     border-radius: 10px;
@@ -129,8 +133,9 @@ body {
     font-family: 'Overpass';
     border-radius: 180px;
     background: hsla(216, 12%, 54%, 0.13);
-    width: 20px;
-    padding: 15px;
+    width: 50px;
+    height: 50px;
+    line-height: 20px;
 
     display: flex;
     flex-direction: row;
@@ -216,4 +221,85 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-lista {
+    font-family: 'Overpass';
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    background: hsl(25, 97%, 53%);
+    border: none;
+    margin: 8px;
+    border-radius: 45px;
+    padding: 0 20px;
+    width: 355px;
+    height: 50px;
+    cursor: pointer;     
+}
+
+.btn-lista:hover {
+    background: hsl(25, 86%, 39%);
+}
+
+.btn-lista:active {
+    background: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    border: none;
+}
+
+/* tela listagem */
+
+.title-tres {
+    font-family: 'Overpass';
+    font-size: 12px;
+    text-align: left;
+    margin: 8px;
+}
+
+.table table, th, td {
+    font-family: 'Overpass';
+}
+
+.table table{
+    margin: auto auto 15px; 
+}
+
+.table th {
+    background: hsl(25, 97%, 53%);
+}
+
+.table th:first-child {
+    font-weight: bold;
+    border-radius: 15px 0 0 0;
+}
+
+.table th:last-child {
+    font-weight: bold;
+    border-radius: 0 15px 0 0;
+}
+
+.table th, td {
+    padding: 10px;
+    width: 157.5px;
+    text-align: center;
+}
+
+.table tr:nth-child(even) {
+    background: hsla(216, 12%, 54%, 0.13);
+}
+.table tr:nth-child(odd) {
+    background: hsla(216, 12%, 54%, 0.445);
+}
+
+.table tr:hover:nth-child(n+2) {
+    background: hsl(25, 97%, 53%);
+    cursor: pointer;
 }

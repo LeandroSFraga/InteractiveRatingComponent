@@ -23,7 +23,7 @@
             fill="#FC7614" />
         </svg>
       </div>
-      <!-- Rating state start -->
+      
       <div class="title">
         <h1>How did we do?<h1>
       </div>
@@ -31,10 +31,12 @@
         <p>Please let us know how we did with your support request. All feedback is appreciated
           to help us improve our offering!</p>
       </div>
-        <form class="textbox">
+
+      <form id="rating-form">
+        <div class="textbox">
           <input type="name" id="name" required class="textbox-inner">
           <label for="name" class="textbox-label"><span class="textbox-span">Name</span></label>
-        </form>
+        </div>
 
         <fieldset class="rating">
           <input type="radio" id="nota1" class="notes" name="nota" value="1">
@@ -50,8 +52,9 @@
         </fieldset>
 
         <div>
-          <a href="/submited.html"><input type="submit" class="submit" id="btn-submit" value="S u b m i t"></input></a>
+          <input type="submit" class="submit" id="btn-submit" value="S u b m i t"></input>
         </div>
+      </form>
 
     </div>
   </div>
