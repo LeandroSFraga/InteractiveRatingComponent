@@ -14,7 +14,7 @@ async function submitAvaliation(event) {
 
     const body = {
         "nome": name,
-        "avaliacao": avaliation
+        "avaliacao": Number(avaliation)
     }
 
     console.log(body);
