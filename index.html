@@ -23,7 +23,7 @@
             fill="#FC7614" />
         </svg>
       </div>
-      
+
       <div class="title">
         <h1>How did we do?<h1>
       </div>
@@ -32,13 +32,15 @@
           to help us improve our offering!</p>
       </div>
 
-      <form id="rating-form">
+
+      <script src="script.js" type="module"></script>
+      <form id="rating-form" data-form>
         <div class="textbox">
-          <input type="name" id="name" required class="textbox-inner">
+          <input type="name" id="name" data-name required class="textbox-inner">
           <label for="name" class="textbox-label"><span class="textbox-span">Name</span></label>
         </div>
 
-        <fieldset class="rating">
+        <div class="rating" rating>
           <input type="radio" id="nota1" class="notes" name="nota" value="1">
           <label for="nota1" class="notes1">1</label>
           <input type="radio" id="nota2" class="notes" name="nota" value="2">
@@ -49,7 +51,7 @@
           <label for="nota4" class="notes4">4</label>
           <input type="radio" id="nota5" class="notes" name="nota" value="5">
           <label for="nota5" class="notes5">5</label>
-        </fieldset>
+        </div>
 
         <div>
           <input type="submit" class="submit" id="btn-submit" value="S u b m i t"></input>
@@ -62,7 +64,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">LeandroSFraga</a>.
   </div>
-  <script src="script.js"></script>
 </body>
 
 </html>
