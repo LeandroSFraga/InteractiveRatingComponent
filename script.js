@@ -5,20 +5,30 @@ localStorage.setItem("avaliation", 0);
 
 
 // SUBMIT
-const formulario = document.querySelector("[data-form]")
+const formulario = document.querySelector("[data-form]");
+const botao = document.querySelector("[btn-submit]");
 
 async function submitAvaliation(event) {
     event.preventDefault();
+    botao.classList.add("submit-loading");
     const name = document.querySelector("[data-name]").value;
     const avaliation = valueAvaliation();
 
+    // -- ApiTwo
     const body = {
         "nome": name,
         "avaliacao": Number(avaliation)
     }
 
-    console.log(body);
+    // -- ApiOne
+    // const body = {
+    //     "name": name,
+    //     "value": Number(avaliation)
+    // }
+
+
     await conectApi.postAvaliation(body);
+    botao.classList.remove("submit-loading");
     window.location.href = "/submited.html";
 }
 

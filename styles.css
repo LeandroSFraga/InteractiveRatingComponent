@@ -1,3 +1,13 @@
+@keyframes button-loading-spinner {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
 body {
     background: hsl(216, 12%, 8%);
 }
@@ -10,6 +20,11 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: static;
+}
+
+.container-listagem {
+    height: 100%;
 }
 
 .shape {
@@ -52,9 +67,7 @@ body {
     width: 0;
 }
 
-.notes label {
-
-}
+.notes label {}
 
 .textbox {
     border: none;
@@ -152,6 +165,12 @@ body {
     background: hsl(25, 97%, 53%);
 }
 
+.button {
+    position: relative;
+    width: 355px;
+    height: 50px;
+}
+
 .submit {
     text-transform: uppercase;
     font-family: 'Overpass';
@@ -163,6 +182,7 @@ body {
     width: 355px;
     height: 50px;
     cursor: pointer;
+    position: relative;
 }
 
 .submit:hover {
@@ -172,6 +192,26 @@ body {
 .submit:active {
     background: hsl(0, 0%, 100%);
     color: hsl(25, 97%, 53%);
+}
+
+.submit-loading .submit-text {
+    visibility: hidden;
+}
+
+.submit-loading::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 4px solid transparent;
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: button-loading-spinner 1s ease infinite;
 }
 
 
@@ -215,6 +255,8 @@ body {
 }
 
 .attribution {
+    position: block;
+    margin-top: 1em;
     font-size: 11px;
     text-align: center;
 }
@@ -242,7 +284,7 @@ body {
     padding: 0 20px;
     width: 355px;
     height: 50px;
-    cursor: pointer;     
+    cursor: pointer;
 }
 
 .btn-lista:hover {
@@ -264,12 +306,15 @@ body {
     margin: 8px;
 }
 
-.table table, th, td {
+.table table,
+th,
+td {
     font-family: 'Overpass';
 }
 
-.table table{
-    margin: auto auto 15px; 
+.table table {
+    margin: auto auto 15px;
+    /* overflow: scroll; */
 }
 
 .table th {
@@ -286,7 +331,8 @@ body {
     border-radius: 0 15px 0 0;
 }
 
-.table th, td {
+.table th,
+td {
     padding: 10px;
     width: 157.5px;
     text-align: center;
@@ -295,6 +341,7 @@ body {
 .table tr:nth-child(even) {
     background: hsla(216, 12%, 54%, 0.13);
 }
+
 .table tr:nth-child(odd) {
     background: hsla(216, 12%, 54%, 0.445);
 }

@@ -18,9 +18,14 @@ function createRow(nome, avaliacao) {
 
 async function listAPI() {
     const listAvaliations = await conectApi.getAvaliations();
+    console.log(listAvaliations);
+
     const arrayAvaliations = Object.values(listAvaliations.results);
     console.log(arrayAvaliations);
+    //ApiOne
     arrayAvaliations.forEach(element => lista.appendChild(createRow(element.nomeUsuario, element.avaliacao)));
+    //ApiTwo
+    // listAvaliations.forEach(element => lista.appendChild(createRow(element.name, element.value)));
 }
 
 listAPI();
