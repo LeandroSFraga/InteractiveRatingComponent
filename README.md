@@ -2,6 +2,8 @@
 
 Praticando HTML, CSS e Javascript criando um componente de avaliação interativo e que faz conexão com uma API.
 
+Link da página do projeto: https://interactive-rating-component-beige-two.vercel.app/listagem.html
+
 São três telas: 
 
 + **Tela de avaliação**
